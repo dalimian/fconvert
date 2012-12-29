@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EncodingTools</name>
+    </assembly>
+    <members>
+        <member name="M:href.Utils.EncodingTools.#cctor">
+            <summary>
+            Static constructor that fills the default preferred codepages
+            </summary>
+        </member>
+        <member name="M:href.Utils.EncodingTools.IsAscii(System.String)">
+            <summary>
+            Checks if specified string data is acii data.
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:href.Utils.EncodingTools.GetMostEfficientEncoding(System.String)">
+            <summary>
+            Gets the best Encoding for usage in mime encodings
+            </summary>
+            <param name="input">text to detect</param>
+            <returns>the suggested encoding</returns>
+        </member>
+        <member name="M:href.Utils.EncodingTools.GetMostEfficientEncodingForStream(System.String)">
+            <summary>
+            Gets the best ISO Encoding for usage in a stream
+            </summary>
+            <param name="input">text to detect</param>
+            <returns>the suggested encoding</returns>
+        </member>
+        <member name="M:href.Utils.EncodingTools.GetMostEfficientEncoding(System.String,System.Int32[])">
+            <summary>
+            Gets the best fitting encoding from a list of possible encodings
+            </summary>
+            <param name="input">text to detect</param>
+            <param name="preferedEncodings">an array of codepages</param>
+            <returns>the suggested encoding</returns>
+        </member>
+        <member name="M:href.Utils.EncodingTools.DetectInputCodepage(System.Byte[])">
+            <summary>
+            Detect the most probable codepage from an byte array
+            </summary>
+            <param name="input">array containing the raw data</param>
+            <returns>the detected encoding or the default encoding if the detection failed</returns>
+        </member>
+        <member name="M:href.Utils.EncodingTools.DetectInputCodepages(System.Byte[],System.Int32)">
+            <summary>
+            Rerurns up to maxEncodings codpages that are assumed to be apropriate
+            </summary>
+            <param name="input">array containing the raw data</param>
+            <param name="maxEncodings">maxiumum number of encodings to detect</param>
+            <returns>an array of Encoding with assumed encodings</returns>
+        </member>
+        <member name="M:href.Utils.EncodingTools.ReadTextFile(System.String)">
+            <summary>
+            Opens a text file and returns the content 
+            encoded in the most probable encoding
+            </summary>
+            <param name="path">path to the souce file</param>
+            <returns>the text content of the file</returns>
+        </member>
+        <member name="M:href.Utils.EncodingTools.OpenTextFile(System.String)">
+            <summary>
+            Returns a stream reader for the given
+            text file with the best encoding applied
+            </summary>
+            <param name="path">path to the file</param>
+            <returns>a StreamReader for the file</returns>
+        </member>
+        <member name="M:href.Utils.EncodingTools.OpenTextStream(System.IO.Stream)">
+            <summary>
+            Creates a stream reader from a stream and detects
+            the encoding form the first bytes in the stream
+            </summary>
+            <param name="stream">a stream to wrap</param>
+            <returns>the newly created StreamReader</returns>
+        </member>
+    </members>
+</doc>

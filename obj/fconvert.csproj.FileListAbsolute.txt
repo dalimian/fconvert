@@ -1,0 +1,8 @@
+c:\work\utf-8\fconvert\obj\Debug\ResolveAssemblyReference.cache
+c:\work\utf-8\fconvert\bin\Debug\fconvert.exe
+c:\work\utf-8\fconvert\bin\Debug\fconvert.pdb
+c:\work\utf-8\fconvert\bin\Debug\EncodingTools.dll
+c:\work\utf-8\fconvert\bin\Debug\EncodingTools.pdb
+c:\work\utf-8\fconvert\bin\Debug\EncodingTools.xml
+c:\work\utf-8\fconvert\obj\Debug\fconvert.exe
+c:\work\utf-8\fconvert\obj\Debug\fconvert.pdb

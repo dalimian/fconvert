@@ -1,0 +1,5 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>-dstEncoding utf-8 -root G:\work\freedb\test.backup -lf G:\work\freedb\test.log -log 1  -doBackup 0 -destOverwrite 1 -start 47 -end 47</StartArguments>
+  </PropertyGroup>
+</Project>
